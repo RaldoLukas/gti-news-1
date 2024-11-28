@@ -152,3 +152,13 @@ Route::get(
         return redirect()->route('gerenciaNoticias');
     }
 )->name('deletaNoticia')->middleware('auth');
+
+Route::view('/noticias', 'noticia-pagina')->name('NoticiaPagina');
+
+Route::view('/alunosucesso', 'alunos-sucesso')->name('AlunosSucesso');
+
+Route::view('/institucional', 'institucional')->name('Institucional');
+
+Route::view('/sobrecurso', 'sobre-curso')->name('SobreCurso');
+
+Route::view('/contato', 'contato')->name('contato');
